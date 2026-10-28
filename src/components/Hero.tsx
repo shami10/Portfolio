@@ -8,14 +8,14 @@ import { btnGhost, btnPrimary } from "@/lib/ui";
 
 // Where each frame starts (fraction of the viewport) before it snaps into the tidy row.
 const frames = [
-  { k: "hero/f1", label: "GelaMeat / Home", sx: 0.5, sy: 0.13, r: -8 },
+  { k: "hero/f1", label: "GelaMeat", sx: 0.5, sy: 0.13, r: -8 },
   { k: "hero/f2", label: "Live session dashboard", sx: 0.585, sy: 0.62, r: 7 },
-  { k: "hero/f3", label: "MoodBites / Home", sx: 0.4, sy: 0.79, r: -6 },
-  { k: "hero/f4", label: "Visionet / Hero", sx: 0.6, sy: 0.3, r: 9 },
-  { k: "hero/f5", label: "Heraf / Admin", sx: 0.52, sy: 0.47, r: -8 },
-  { k: "hero/f6", label: "GelaMeat / POS", sx: 0.33, sy: 0.06, r: 5 },
-  { k: "hero/f7", label: "Real estate / Home", sx: 0.07, sy: 0.83, r: -10 },
-  { k: "hero/f8", label: "Heraf / Student", sx: 0.8, sy: 0.88, r: 5 },
+  { k: "hero/f3", label: "MoodBites", sx: 0.4, sy: 0.79, r: -6 },
+  { k: "hero/f4", label: "Visionet", sx: 0.6, sy: 0.3, r: 9 },
+  { k: "hero/f5", label: "Heraf", sx: 0.52, sy: 0.47, r: -8 },
+  { k: "hero/f6", label: "GelaMeat", sx: 0.33, sy: 0.06, r: 5 },
+  { k: "hero/f7", label: "Real estate", sx: 0.07, sy: 0.83, r: -10 },
+  { k: "hero/f8", label: "Heraf", sx: 0.8, sy: 0.88, r: 5 },
 ];
 const NOMINAL_W = 10.5; // vw
 const GAP = (95 - 8 * NOMINAL_W) / 7;
@@ -78,7 +78,7 @@ function PortraitFrame({ lift }: { lift?: MotionValue<number> }) {
   };
   return (
     <div className="relative aspect-[1/1.12] w-full">
-      <span className="absolute -top-6 left-0 whitespace-nowrap text-[11px] text-mist">Ahtasham Anjum / Profile</span>
+      {/* <span className="absolute -top-6 left-0 whitespace-nowrap text-[11px] text-mist">Ahtasham Anjum / Profile</span> */}
       <div className="absolute inset-0 rounded-[28px] bg-[linear-gradient(150deg,#2A1A7A_0%,#5B3FE0_55%,#8E73FF_100%)]" aria-hidden />
       <div className="absolute inset-0 [clip-path:inset(-40%_-6%_0_-6%_round_0_0_28px_28px)]">
         {lift ? <motion.img {...common} style={{ y: lift }} /> : <img {...common} />}

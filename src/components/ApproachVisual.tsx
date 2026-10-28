@@ -36,7 +36,7 @@ export function ApproachVisual() {
         style={reduce ? undefined : { clipPath: clip }}
       />
       {!reduce && <motion.span aria-hidden className="absolute bottom-0 top-0 w-px bg-violet-soft/70 shadow-[0_0_18px_2px_rgba(124,92,255,.7)]" style={{ left: edgeLeft }} />}
-      <ul className="pointer-events-none absolute inset-x-0 bottom-3 hidden sm:block" aria-hidden>
+      <ul className="pointer-events-none absolute inset-x-0 bottom-8 hidden sm:block" aria-hidden>
         {labels.map((l) => (
           <li key={l.text} className="absolute -translate-x-1/2 text-[13px] text-mist" style={{ left: `${l.x}%` }}>{l.text}</li>
         ))}
