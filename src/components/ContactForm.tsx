@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 import { btnGhost, btnPrimary } from "@/lib/ui";
 
-const KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+const KEY = "167d3f0a-3d78-447a-a52c-33da5727f95f";
 const reasons = ["A full-time role", "A freelance project", "A collaboration", "Something else"];
 type Errors = Partial<Record<"name" | "email" | "reason" | "message", string>>;
 
